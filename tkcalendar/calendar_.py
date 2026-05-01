@@ -20,6 +20,9 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
+-- With one small change by Christopher Lovelace <chris.lovelace16@gmail.com>
+    Allows for DDMMMYYY date format
+
 Calendar widget
 """
 
