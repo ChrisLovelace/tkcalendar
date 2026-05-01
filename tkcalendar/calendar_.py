@@ -1196,7 +1196,7 @@ class Calendar(ttk.Frame):
         pattern = date_pattern.lower()
         ymd = r"^y+[^a-zA-Z]*m{1,2}[^a-z]*d{1,2}[^mdy]*$"
         mdy = r"^m{1,2}[^a-zA-Z]*d{1,2}[^a-z]*y+[^mdy]*$"
-        dmy = r"^d{1,2}[^a-zA-Z]*m{1,2}[^a-z]*y+[^mdy]*$"
+        dmy = r"^d{1,2}[^a-zA-Z]*m{1,3}[^a-z]*y+[^mdy]*$" #Changed range for m chars to include MMM, abbrev. month name
         res = ((re.search(ymd, pattern) is not None)
                or (re.search(mdy, pattern) is not None)
                or (re.search(dmy, pattern) is not None))
